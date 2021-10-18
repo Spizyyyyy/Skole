@@ -1,0 +1,17 @@
+int x = 50;
+int y = 50;
+
+void setup() {
+  size(500, 500) ;
+}
+
+void draw() {
+  ellipse(x, y, 30,30);
+}
+
+void keyPressed() {
+  if (key == 'd')      { x += 5; }
+  if (key == 's')      { y += 5; }
+  if (key == 'w')   { y -= 5; }
+  if (key == 'a') { x -= 5; }
+}
